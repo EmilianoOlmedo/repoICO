@@ -1,0 +1,1067 @@
+#include <iostream>
+using namespace std;
+/*PROJECT UPSILON 
+VERSION Alpha*/
+
+//Opciones del Menu Principal
+void menuPrincipal() {
+    cout <<"----------------Bienvendio al Juego Interactivo----------------"<<endl;
+    cout <<"Por favor, selecciona una opcion, para esto se debe "<<endl;
+    cout <<"de teclear el numero del inciso, acto seguido pulsar ENTER."  <<endl;
+    cout<< "---------------------------------------------------------------"<<endl;
+    cout<< "1) ° PLAY °"<<endl;
+    cout<< "2) Instrucciones para jugar."<<endl;
+    cout<< "3) Contexto para entener la historia."<<endl;
+    cout<< "4) Información del creador del código."<<endl;
+    cout <<"5) Ya no quiero jugar y quiero cerrar el juego porque esta mal programado."<<endl;
+}
+
+// Este es la Interaccion 1 -Elijes el lugar donde vas-
+void opcionINICIAL() {
+    cout << "OI------------------------------------------------------" << endl;
+    cout << "Punto 1: Estas en medio de la isla, y ves varias ubicaciones" << endl;
+    cout << "Tu vida es de 100 puntos." << endl;
+    cout << "¿A dónde vas?." << endl;
+    cout << "1. Veo fuego, creo que es una especie de aldea." << endl;
+    cout << "2. Ves una cueva." << endl;
+    cout << "3. Veo una montaña, pero es diferente a las otras." << endl;
+    }
+    
+    
+    
+//Aqui empieza la opcion de la aldea
+void opcionA(){
+    //FILA 2
+    cout << "A------------------------------------------------------" << endl;
+    cout << "Punto 2: Segui el fuego, y veo que es una aldea, me acerco" << endl;
+    cout << "pero tengo que decidir que hacer." << endl;
+    cout << "Tu vida es de 100 puntos." << endl;
+    cout << "1. Me escabullo y entro por un lugar donde no me ven." << endl;
+    cout << "2. Veo que un guardia de la aldea esta solo y lo ataco sigilosamente." << endl;
+    cout << "3. Intento correr por la entrada principal de la aldea ." << endl;
+    }
+        //FILA 3
+        void opcionA1(){
+        cout << "A1------------------------------------------------------" << endl;
+        cout << "Punto 3: Me escabulli y entre exitosamente pero"<< endl;
+        cout << "ahora debo de decidir que hacer." << endl;
+        cout << "Tu vida es de 100 puntos." << endl;
+        cout << "1. Veo una especie de casa que esta sola e intento entrar." << endl;
+        cout << "2. Veo que alguien esta solo en la orilla del campamento y lo intento matar para saquearlo." << endl;
+        cout << "3. No le quiero hacer daño a nadie, me vooy por la orilla sin que me vea nadie." << endl; 
+        }
+        
+        void opcionA2(){
+        cout << "A2------------------------------------------------------" << endl;
+        cout << "Punto 3:Voy sigilosamente a atacarlo y me descubre " << endl;
+        cout << "ahora debo de decidir que hacer." << endl;
+        cout << "Tu vida es de 100 puntos." << endl;
+        cout << "1. Veo una piedra y me quiero defender." << endl;
+        cout << "2. Corro, pelear no es una opcion." << endl;
+        cout << "3. Lo ataco con los puños, creo ser agil" << endl; 
+        }
+        
+        void opcionA3(){
+        cout << "A3------------------------------------------------------" << endl;
+        cout << "Entro por la entrada principal pero unos habitantes de la aldea me ven " << endl;
+        cout << "ahora debo de decidir que hacer." << endl;
+        cout << "Tu vida es de 100 puntos." << endl;
+        cout << "1. Corro a una casa para poder cubrirme" << endl;
+        cout << "2. Intento cruzar la aldea sin que nadie me alcaance" << endl;
+        cout << "3. Tomo a una persona como rehén" << endl; 
+        }
+            //FILA 4
+            void opcionA11(){
+            cout << "A11------------------------------------------------------" << endl;
+            cout << "Punto 4: Entre sigilosamente a la casa, sin embargo hay una "<< endl;
+            cout << "persona, al parecer no me vio entrar"<< endl;
+            cout << " ahora debo de decidir que hacer." << endl;
+            cout << "Tu vida es de 100 puntos." << endl;
+            cout << "1. Lo mato sin hacer ruido." << endl;
+            cout << "2. Me salgo de la casa, no quiero hacerle daño." << endl;
+            cout << "3. Intento escabullirme en la casa sin hacer daño a nadie" << endl; 
+            }
+        
+            void opcionA12(){
+            cout << "A12------------------------------------------------------" << endl;
+            cout << "Punto 4: Matare al guardia, sin embargo me lastimo mucho hacerlo" << endl;
+            cout << "Lo saqueare, pero solo puedo llevarme una cosa" << endl;
+            cout << "ahora debo de decidir que hacer." << endl;
+            cout << "Tu vida es de 80 puntos." << endl;
+            cout << "1. Tenia una piedra afilada, espero me sirva de algo." << endl;
+            cout << "2. Tenia una banana, creo que me ayudara despues de esta pelea" << endl;
+            cout << "3. Una especie de mechero, no se de donde lo saco." << endl; 
+            }
+        
+            void opcionA13(){
+            cout << "A13------------------------------------------------------" << endl;
+            cout << "Punto 4: Camine por la orilla, sin embargo alguien casi me ve," << endl;
+            cout << "por lo que me escondo con rapidez." << endl;
+            cout << "ahora debo de decidir que hacer." << endl;
+            cout << "Tu vida es de 100 puntos." << endl;
+            cout << "1. Me sigo ocultando, con suerte no me vio esconderme." << endl;
+            cout << "2. Creo que si me vio, nesecito luchar por mi vida." << endl;
+            cout << "3. Pido piedad" << endl; 
+            }
+            
+            void opcionA21(){
+            cout << "A21------------------------------------------------------" << endl;
+            cout << "Punto 4: Logre matarlo, pero me quita salud," << endl;
+            cout << "ahora debo de decidir que hacer." << endl;
+            cout << "Tu vida es de 80 puntos." << endl;
+            cout << "1. Nesecito saquearlo, es mi unica oportunidad." << endl;
+            cout << "2. Me tengo que ir, no tengo tiempo." << endl;
+            cout << "3. Nesecito esconder el cadaver" << endl; 
+            }
+            
+            void opcionA22(){
+            cout << "A22------------------------------------------------------" << endl;
+            cout << "Punto 4: Me vieron, nesecito salir hacer algo al respecto," << endl;
+            cout << "ahora debo de decidir que hacer." << endl;
+            cout << "Tu vida es de 100 puntos." << endl;
+            cout << "1. Tengo que salir de la aldea, no hay tiempo." << endl;
+            cout << "2. Tengo que correr y esconderme en un lugar." << endl;
+            cout << "3. La unica opcion para salir de esta situacion es la violencia "<< endl; 
+            }
+            
+            void opcionA23(){
+            cout << "A23------------------------------------------------------" << endl;
+            cout << "Punto 4: Mis puños no le hacen nada, y el me lanzo un golpe," << endl;
+            cout << "ahora debo de decidir que hacer." << endl;
+            cout << "Tu vida es de 80 puntos." << endl;
+            cout << "1. Tengo que intentar atacarlo, la paz no es una opcion." << endl;
+            cout << "2. Tengo que hacerlo mi rehén, es la unica forma de salir de esto." << endl;
+            cout << "3. No puedo contra el, tengo que correr"<< endl; 
+            }
+            
+            void opcionA31(){
+            cout << "A31------------------------------------------------------" << endl;
+            cout << "Punto 4: Corri demaciado, espero que en esa casa pueda perderlos" << endl;
+            cout << "ahora debo de decidir que hacer." << endl;
+            cout << "Tu vida es de 100 puntos." << endl;
+            cout << "1. Tengo que buscar algo con que defenderme." << endl;
+            cout << "2. Creo que escuche a un niño, el sera mi distraccion." << endl;
+            cout << "3. Esta casa no es un buen lugar, tengo que salir"<< endl; 
+            }
+            
+            void opcionA32(){
+            cout << "A32------------------------------------------------------" << endl;
+            cout << "Punto 4: Estoy por cruzar la aldea, pero una persona ruda " << endl;
+            cout << "con una especie de lanza se pone en mi camino" << endl;
+            cout << "ahora debo de decidir que hacer." << endl;
+            cout << "Tu vida es de 100 puntos." << endl;
+            cout << "1. Tengo que pelear, se que puedo ganar." << endl;
+            cout << "2. Trato de esquivarlo y salir corriendo." << endl;
+            cout << "3. Le quitare su lanza y la usare a mi favor"<< endl; 
+            }
+            
+            void opcionA33(){
+            cout << "A33------------------------------------------------------" << endl;
+            cout << "Punto 4: Logre hacer prisionero a una mujer, sin embargo ella" << endl;
+            cout << " se defendio y me quito vida." << endl;
+            cout << "ahora debo de decidir que hacer." << endl;
+            cout << "Tu vida es de 60  puntos." << endl;
+            cout << "1. La matare, esto es una distraccion." << endl;
+            cout << "2. Solamente la lastimare, eso me dará tiempo." << endl;
+            cout << "3. La sigo manteniendo como prisionera"<< endl; 
+            }
+                // FILA 5
+                //A11X
+                void opcionA111(){
+                cout << "A111------------------------------------------------------" << endl;
+                cout << "Punto 5: Pude matar a ese hombre sin hacer ruido creo que " << endl;
+                cout << "vi una salida de la aldea cerca de esta casa." << endl;
+                cout << "------------------------------------------------------" << endl;
+                cout << "Efectivamente pude salir con vida, y llegue al bote, ya me quiero ir" << endl;
+                cout << "Tu vida es de 100 puntos." << endl;
+                cout << "Presiona 7 para entar al barco y salir de la isla." << endl;
+                }
+                
+                void opcionA112(){
+                cout << "A112------------------------------------------------------" << endl;
+                cout << "Punto 5: Decidi irme de la casa y no alertar a nadie," << endl;
+                cout << "creo que me escape de la aldea sin ser visto y pude llegar al bote." << endl;
+                cout << "------------------------------------------------------" << endl;
+                cout << "Efectivamente pude salir con vida, y llegue al bote, ya me quiero ir" << endl;
+                cout << "Tu vida es de 100 puntos." << endl;
+                cout << "Presiona 7 para entar al barco y salir de la isla." << endl;
+                }
+                
+                void opcionA113(){
+                cout << "A113------------------------------------------------------" << endl;
+                cout << "Punto 5: Me fui de la casa y no alerte a nadie," << endl;
+                cout << "oh, espera alguien me vio salir" << endl;
+                cout << "Tu vida es de 100 puntos." << endl;
+                cout << "------------------------------------------------------" << endl;
+                cout << "Te acaban de dar una buena paliza, fue mala idea entar a la casa" << endl;
+                cout << "Tu vida es de 0 puntos." << endl;
+                cout << "Presiona 7 para ver tu destino." << endl;
+                }
+                //A12X
+                void opcionA121(){
+                cout << "A121------------------------------------------------------" << endl;
+                cout << "Punto 5: Creo que la piedra afilada es la mejor opcion creo que" << endl;
+                cout << "alguien viene, pero gracias a la piedra lo mato y escapo de la aldea." << endl;
+                cout << "------------------------------------------------------" << endl;
+                cout << "Efectivamente pude salir con vida, y llegue al bote, ya me quiero ir" << endl;
+                cout << "Tu vida es de 80 puntos." << endl;
+                cout << "Presiona 7 para entar al barco y salir de la isla." << endl;
+                }
+                
+                void opcionA122(){
+                cout << "A122------------------------------------------------------" << endl;
+                cout << "Punto 5: Tenia tiempo que no como una banana," << endl;
+                cout << "oh no, alguien me vio, estupida banana, es culpa tuya." << endl;
+                cout << "Tu vida es de 80 puntos." << endl;
+                cout << "------------------------------------------------------" << endl;
+                cout << "Te acaban de dar una buena paliza" << endl;
+                cout << "Tu vida es de 0 puntos." << endl;
+                cout << "Presiona 7 para ver tu destino." << endl;
+                }
+                
+                void opcionA123(){
+                cout << "A123------------------------------------------------------" << endl;
+                cout << "Punto 5: Un mechero, puedo quemar una casa para distraerlos y," << endl;
+                cout << "salir de aqui" << endl;
+                cout << "Tu vida es de 80 puntos." << endl;    
+                cout << "------------------------------------------------------" << endl;
+                cout << "Gracias a la distraccion lograste escapar y llegar al bote" << endl;
+                cout << "Tu vida es de 80 puntos." << endl;
+                cout << "Presiona 7 para entrar al bote y salir de la isla"<<endl;
+                }
+                //A13x
+                void opcionA131(){
+                cout << "A131------------------------------------------------------" << endl;
+                cout << "Punto 5: Al parecer no te vieron escondientote, entonces decides esperar" << endl;
+                cout << "para poder irte de la aldea." << endl;
+                cout << "Tu vida es de 100 puntos." << endl;
+                cout << "------------------------------------------------------" << endl;
+                cout << "Efectivamente nadie me vio y pude salir con vida, y llegue al bote, ya me quiero ir" << endl;
+                cout << "Tu vida es de 100 puntos." << endl;
+                cout << "Presiona 7 para entar al barco y salir de la isla." << endl;
+                }
+                
+                void opcionA132(){
+                cout << "A132------------------------------------------------------" << endl;
+                cout << "Punto 5: Tengo que enfrentarlo, creo que si me vio." << endl;
+                cout << "Al salir del escondite todos te ven y alertas a toda la aldea." << endl;
+                cout << "Tu vida es de 100 puntos." << endl;
+                cout << "------------------------------------------------------" << endl;
+                cout << "Te acaban de dar una buena paliza" << endl;
+                cout << "Tu vida es de 0 puntos." << endl;
+                cout << "Presiona 7 para ver tu destino." << endl;
+                }
+                
+                void opcionA133(){
+                cout << "A133------------------------------------------------------" << endl;
+                cout << "Punto 5: Pedire piedad, quizas sean comprensivos y me perdonen," << endl;
+                cout << "no espereeen, quiero vivir " << endl;
+                cout << "Tu vida es de 100 puntos." << endl;    
+                cout << "------------------------------------------------------" << endl;
+                cout << "Te vieron como comida, ahora estas en el estomago de los habitantes" << endl;
+                cout << "Tu vida es de 0 puntos." << endl;
+                cout << "Presiona 7 para ver tu destino"<<endl;
+                }
+                ///A21x
+                void opcionA211(){
+                cout << "A211------------------------------------------------------" << endl;
+                cout << "Punto 5: Pude matar a ese hombre creo que lo voy a saquear, " << endl;
+                cout << "oh no, tarde en saquearlo y me descubrieron  ." << endl;
+                cout << "Tu vida es de 80 puntos." << endl;
+                cout << "------------------------------------------------------" << endl;
+                cout << "Te descubren y te matan, no pudiste hacer nada" << endl;
+                cout << "Tu vida es de 0 puntos." << endl;
+                cout << "Presiona 7 para ver tu destino"<<endl;
+                }
+                
+                void opcionA212(){
+                cout << "A212------------------------------------------------------" << endl;
+                cout << "Punto 5: Mejor me voy, entre menos tiempo este en este lugar mejor," << endl;
+                cout << "oh no, vieron el cadaver, y ahora vienen por mi." << endl;
+                cout << "Tu vida es de 80 puntos." << endl;
+                cout << "------------------------------------------------------" << endl;
+                cout << "Al ver el cadaver te descubrieron y no pudiste escapar, " << endl;
+                cout << "Tu vida es de 0 puntos." << endl;
+                cout << "Presiona 7 para ver tu destino"<<endl;
+                }
+                
+                void opcionA213(){
+                cout << "A213------------------------------------------------------" << endl;
+                cout << "Punto 5: Es mejor esconderlo, pues quiero ser sigiloso," << endl;
+                cout << "oh que es eso, es una salida, me largo de aqui" << endl;
+                cout << "Tu vida es de 80 puntos." << endl;
+                cout << "------------------------------------------------------" << endl;
+                cout << "Pude llegar a mi bote sana y salva" << endl;
+                cout << "Tu vida es de 80 puntos." << endl;
+                cout << "Presiona 7 para entar al barco y salir de la isla." << endl;
+                }
+                //A22X
+                void opcionA221(){
+                cout << "A221------------------------------------------------------" << endl;
+                cout << "Punto 5: Tengo que salir de la aldea, oh no ya me vieron," << endl;
+                cout << "no por favor, sueltenme." << endl;
+                cout << "Tu vida es de 100 puntos." << endl;
+                cout << "------------------------------------------------------" << endl;
+                cout << "Te atraparon, ahora eres su comida nueva" << endl;
+                cout << "Tu vida es de 0 puntos." << endl;
+                cout << "Presiona 7 para ver tu destino." << endl;
+                }
+                
+                void opcionA222(){
+                cout << "A222------------------------------------------------------" << endl;
+                cout << "Punto 5: Me escondi rapidamente, creo que ya los perdi," << endl;
+                cout << "efectivamente, nadie me vio, tengo que salir de la aldea" << endl;
+                cout << "Tu vida es de 100 puntos." << endl;
+                cout << "------------------------------------------------------" << endl;
+                cout << "Gracias a tu escondite, escapaste y llegas a tu barco" << endl;
+                cout << "Tu vida es de 100 puntos." << endl;
+                cout << "Presiona 7 para entrar al bote y salir de la isla"<<endl;
+                }
+                
+                void opcionA223(){
+                cout << "A223------------------------------------------------------" << endl;
+                cout << "Punto 5: Peleare, no podran contra mi," << endl;
+                cout << "no por favor esperennn" << endl;
+                cout << "Tu vida es de 100 puntos." << endl;    
+                cout << "------------------------------------------------------" << endl;
+                cout << "Al parecer si pudieron contra ti" << endl;
+                cout << "Tu vida es de 0 puntos." << endl;
+                cout << "Presiona 7 para ver tu destino." << endl;
+                }
+                //A23x
+                void opcionA231(){
+                cout << "A231------------------------------------------------------" << endl;
+                cout << "Punto 5: Te derrotare, no eres oponente para mi" << endl;
+                cout << "nooo, eres mas fuerte de lo que pense." << endl;
+                cout << "Tu vida es de 80 puntos." << endl;
+                cout << "------------------------------------------------------" << endl;
+                cout << "El oponente logra matarte y no pudiste hacer nada" << endl;
+                cout << "Tu vida es de 0 puntos." << endl;
+                cout << "Presiona 7 para ver tu destino." << endl;
+                }
+                
+                void opcionA232(){
+                cout << "A232------------------------------------------------------" << endl;
+                cout << "Punto 5: Seras mi rehen, que nadie se mueva o lo mato" << endl;
+                cout << "nooo, añguien llego por la espalda sin darme cuenta." << endl;
+                cout << "Tu vida es de 80 puntos." << endl;
+                cout << "------------------------------------------------------" << endl;
+                cout << "Me asfixio y mori" << endl;
+                cout << "Tu vida es de 0 puntos." << endl;
+                cout << "Presiona 7 para ver tu destino." << endl;
+                }
+                
+                void opcionA233(){
+                cout << "A233------------------------------------------------------" << endl;
+                cout << "Punto 5: Necesito correr por mi vida, siiii, logre perderlo y sali" << endl;
+                cout << "de la aldea, ire a mi barco" << endl;
+                cout << "Tu vida es de 80 puntos." << endl;    
+                cout << "------------------------------------------------------" << endl;
+                cout << "Si, llegue a mi barco, ahora debo de, auchhh, me tropece" << endl;
+                cout << "Tu vida bajo a 60 puntos, por que te caiste al subir al barco xd." << endl;
+                cout << "Presiona 7 para entrar al bote y salir de la isla"<<endl;
+                }
+                //A31X
+                void opcionA311(){
+                cout << "A311------------------------------------------------------" << endl;
+                cout << "Punto 5: Encontre esta hacha, creo que me puede servir, aparte que" << endl;
+                cout << "vi una salida de la aldea cerca de esta casa. ." << endl;
+                cout << "Oh no, me enfrente con un aldeano y me lastimo, pero puede salir de aqui. ." << endl;
+                cout << "Tu vida es de 65 puntos." << endl;
+                cout << "------------------------------------------------------" << endl;
+                cout << "Efectivamente pude salir de la aldea, y llegue al bote, ya me quiero ir" << endl;
+                cout << "Presiona 7 para entar al barco y salir de esta isla." << endl;
+                }
+                
+                void opcionA312(){
+                cout << "A312------------------------------------------------------" << endl;
+                cout << "Punto 5: Encontre a un rehen, si alguien me lastima el muere," << endl;
+                cout << "lastime al aldeano, me sirve de distraccion para irme de aqui," << endl;
+                cout << "Sin embargo ese mimso aldeano me lastimo un poco." << endl;
+                cout << "------------------------------------------------------" << endl;
+                cout << "Efectivamente pude sali de la aldea y llegue al bote, ya me quiero ir" << endl;
+                cout << "Tu vida es de 75 puntos." << endl;
+                cout << "Presiona 7 para entar al barco y salir de esta isla." << endl;
+                }
+                
+                void opcionA313(){
+                cout << "A313------------------------------------------------------" << endl;
+                cout << "Punto 5: No tengo tiempo para esto, mejor me voy de esta aldea," << endl;
+                cout << "!!oh!!, no sueltame, me quiero ir de aqui." << endl;
+                cout << "Tu vida es de 100 puntos." << endl;
+                cout << "------------------------------------------------------" << endl;
+                cout << "Te acaban de dar una buena paliza, fue mala idea salir como loca de aqui" << endl;
+                cout << "Tu vida es de 0 puntos." << endl;
+                cout << "Presiona 7 para ver tu destino." << endl;
+                }
+                //A32X
+                void opcionA321(){
+                cout << "A321------------------------------------------------------" << endl;
+                cout << "Punto 5: ¿Crees que no te puedo ganar? ven yo te dare una p..." << endl;
+                cout << "oh espera, por favor no me hagas nadaa." << endl;
+                cout << "Tu vida es de 100 puntos." << endl;
+                cout << "------------------------------------------------------" << endl;
+                cout << "No puedo contra ti, eres muy fuerte." << endl;
+                cout << "Tu vida es de 0 puntos." << endl;
+                cout << "Presiona 7 para ver tu destino." << endl;
+                }
+                
+                void opcionA322(){
+                cout << "A322------------------------------------------------------" << endl;
+                cout << "Punto 5: Te esquive, eres fuerte pero lento, me voy de aqui!!!" << endl;
+                cout << "La proxima vez planeo bien mis vacaciones!!." << endl;
+                cout << "Tu vida es de 100 puntos." << endl;
+                cout << "------------------------------------------------------" << endl;
+                cout << "Efectivamente pude sali de la aldea y llegue al bote, ya me quiero ir" << endl;
+                cout << "Tu vida es de 100 puntos." << endl;
+                cout << "Presiona 7 para entar al barco y salir de esta isla." << endl;
+                }
+                
+                void opcionA323(){
+                cout << "A323------------------------------------------------------" << endl;
+                cout << "Punto 5: Esa lanza es mia!, damela para poder destruirte," << endl;
+                cout << "oh no, es muy fuerte" << endl;
+                cout << "Tu vida es de 100 puntos." << endl;    
+                cout << "------------------------------------------------------" << endl;
+                cout << "Por desgracia no pude contra el." << endl;
+                cout << "Tu vida es de 0 puntos." << endl;
+                cout << "Presiona 7 para ver tu destino." << endl;
+                }
+                //A33x
+                void opcionA331(){
+                cout << "A331------------------------------------------------------" << endl;
+                cout << "Punto 5: Lo siento señora, su muerte sera una buena dsitraccion para" << endl;
+                cout << "que yo pueda escaparme." << endl;
+                cout << "Tu vida es de 60 puntos." << endl;
+                cout << "------------------------------------------------------" << endl;
+                cout << "Gracias a la muerte de la señora pude crear una distracion y pude" << endl;
+                cout << "salir de esta aldea y encontar mi barco." << endl;
+                cout << "Tu vida es de 60 puntos." << endl;
+                cout << "Presiona 7 para entar al barco y salir de esta isla." << endl;
+                }
+                
+                void opcionA332(){
+                cout << "A332------------------------------------------------------" << endl;
+                cout << "Punto 5: No quiero matar a la mujer, solo la voy a herir para." << endl;
+                cout << "Que me de tiempo de escapar." << endl;
+                cout << "Tu vida es de 60 puntos." << endl;
+                cout << "------------------------------------------------------" << endl;
+                cout << "Oh no, como ella solo esta herida me persiguen con mas furia, alejense" << endl;
+                cout << "de mi por favor, ayuda me matan!" << endl;
+                cout << "Tu vida es de 0 puntos." << endl;
+                cout << "Presiona 7 para ver tu destino." << endl;
+                }
+                
+                void opcionA333(){
+                cout << "A333------------------------------------------------------" << endl;
+                cout << "Punto 5: Esta mujer sera mi rehen hasta que yo pueda salir viva de aqui" << endl;
+                cout << "awwww, alguien me llego por la espalda y me esta ahorcando" << endl;
+                cout << "Tu vida es de 60 puntos." << endl;    
+                cout << "------------------------------------------------------" << endl;
+                cout << "Moriste Asfixiada" << endl;
+                cout << "Tu vida es de 0 puntos." << endl;
+                cout << "Presiona 7 para ver tu destino"<<endl;
+                }
+                //RESULTADO FINAL
+                void ganasteALDEA(){
+                cout << "WinAldea------------------------------------------------------" << endl;
+                cout << "Punto 6: ¡¡¡Felicidades!!!!" << endl;
+                cout << "lograste subir al bote y salir de esta peligrosa isla, es hora de  " << endl;
+                cout << "volver a la ciudad" << endl;    
+                cout << "------------------------------------------------------" << endl;
+                cout << "Profe pongame 10, hacer esta cosa mal prgramada me costo 29 horas ;(" << endl;
+                cout << "de mi aburrida vida." << endl;
+                cout << "Para Volver a jugar, favor de ejecutar de nuevo el codigo :D"<<endl;
+                }
+                
+                void perdisteAldea(){
+                cout << "YouLostAldea------------------------------------------------------" << endl;
+                cout << "Punto 6: ¡¡¡Perdiste!!!!" << endl;
+                cout << "Al parecer los hapitantes de esta aldea son mas peligrosos de lo que aparentan, " << endl;
+                cout << "tienes que volver a intentarlo!" << endl;    
+                cout << "------------------------------------------------------" << endl;
+                cout << "Profe pongame 10, hacer esta cosa mal prgramada me costo 29 horas ;(" << endl;
+                cout << "de mi aburrida vida." << endl;
+                cout << "Para Volver a jugar, favor de ejecutar de nuevo el codigo :D"<<endl;
+                }
+                
+                
+/*--------------------------------------------------------------------------------------------------------------                
+ Aqui empieza la opcion de la cueva                                                                            |
+----------------------------------------------------------------------------------------------------------------*/ 
+
+
+
+
+    void opcionB(){
+    cout << "------------------------------------------------------" << endl;
+    cout << "Punto 2: Creo que ire por la cueva, los" << endl;
+    cout << "otros lugares parecen peligrosos." << endl;
+        cout << "Tu vida es de 100 puntos." << endl;
+    cout << "1. Me escabullo y entro por un lugar donde no me ven." << endl;
+    cout << "2. Veo que alguien de la aldea esta solo y lo ataco." << endl;
+    cout << "3. Intento correr por la entrada principal de la aldea ." << endl;
+    }
+    
+    
+    
+    
+// Aqui empieza la opcion de la montaña o yo que se, maestro calendario si ve esto pongame 10, son las 2 de la mañana y estoy haciendo esto :(
+    void opcionC(){
+    cout << "------------------------------------------------------" << endl;
+    cout << "Punto 2: Creo que ire por la montaña, los" << endl;
+    cout << "otros lugares parecen peligrosos." << endl;
+        cout << "Tu vida es de 100 puntos." << endl;
+    cout << "1. Me escabullo y entro por un lugar donde no me ven." << endl;
+    cout << "2. Veo que alguien de la aldea esta solo y lo ataco." << endl;
+    cout << "3. Intento correr por la entrada principal de la aldea ." << endl;
+    }
+
+
+
+int main()
+{    
+    menuPrincipal();
+    int eleccion;
+    int menu=0;
+    cin >> menu;
+    
+   // historia_punto_1();
+
+    if (menu == 1) {
+        
+        opcionINICIAL();//Esta Opcion es donde todo inicia
+        cin >> eleccion;
+        
+        switch(eleccion){//switch Aldea Montaña Cueva 
+            
+/*INICIA Aldea*/case 1:
+                    opcionA();//A
+                    cin>>eleccion;
+                        switch(eleccion){
+                        case 1:
+                        opcionA1();//A1
+                        cin>>eleccion;
+                            switch(eleccion){
+                                case 1:
+                                opcionA11();
+                                    cin>>eleccion;
+                                        switch(eleccion){
+                                            case 1:
+                                            opcionA111();
+                                                cin>>eleccion;
+                                                switch(eleccion){
+                                                    case 7:
+                                                    ganasteALDEA();
+                                                    break;
+                                                    default:
+                                                    cout<<"Escribe el numero 7"<<endl;
+                                                }
+                                            
+                                            break;
+                                            case 2:
+                                            opcionA112();
+                                                cin>>eleccion;
+                                                switch(eleccion){
+                                                    case 7:
+                                                    ganasteALDEA();
+                                                    break;
+                                                    default:
+                                                    cout<<"Escribe el numero 7";
+                                                }
+                                            
+                                            break;
+                                            case 3:
+                                            opcionA113();
+                                                cin>>eleccion;
+                                                switch(eleccion){
+                                                    case 7:
+                                                    perdisteAldea();
+                                                    break;
+                                                    default:
+                                                    cout<<"Escribe el numero 7";
+                                                }
+                                            
+                                            break;
+                                            default:
+                                            cout<<"Escribe el numero 7";
+                                            
+                                            
+                                        }
+                            
+                            
+                                break;
+                                case 2:
+                                opcionA12();
+                                    cin>>eleccion;
+                                     switch(eleccion){
+                                            case 1:
+                                            opcionA121();
+                                                cin>>eleccion;
+                                                switch(eleccion){
+                                                    case 7:
+                                                    ganasteALDEA();
+                                                    break;
+                                                    default:
+                                                    cout<<"Escribe el numero 7";
+                                                }
+                                            
+                                            break;
+                                            case 2:
+                                            opcionA122();
+                                                cin>>eleccion;
+                                                switch(eleccion){
+                                                    case 7:
+                                                    perdisteAldea();
+                                                    break;
+                                                    default:
+                                                    cout<<"Escribe el numero 7";
+                                                }
+                                            break;
+                                            case 3:
+                                            opcionA123();
+                                                cin>>eleccion;
+                                                switch(eleccion){
+                                                    case 7:
+                                                    ganasteALDEA();
+                                                    break;
+                                                    default:
+                                                    cout<<"Escribe el numero 7";
+                                                }
+                                            break;
+                                            default:
+                                            cout<<"";
+                                            
+                                            
+                                        }
+                            
+                            
+                            
+                                break;
+                                 case 3:
+                                opcionA13();
+                                    cin>>eleccion;
+                                    switch(eleccion){
+                                            case 1:
+                                            opcionA131();
+                                                cin>>eleccion;
+                                                switch(eleccion){
+                                                    case 7:
+                                                    ganasteALDEA();
+                                                    break;
+                                                    default:
+                                                    cout<<"Escribe el numero 7";
+                                                }
+                                            
+                                            break;
+                                            case 2:
+                                            opcionA132();
+                                                cin>>eleccion;
+                                                switch(eleccion){
+                                                    case 7:
+                                                    perdisteAldea();
+                                                    break;
+                                                    default:
+                                                    cout<<"Escribe el numero 7";
+                                                }
+                                            break;
+                                            case 3:
+                                            opcionA133();
+                                                cin>>eleccion;
+                                                switch(eleccion){
+                                                    case 7:
+                                                    perdisteAldea();
+                                                    break;
+                                                    default:
+                                                    cout<<"Escribe el numero 7";
+                                                }
+                                            
+                                            break;
+                                            default:
+                                            cout<<"";
+                                            
+                                            
+                                        }
+                            
+                            
+                            
+                                break;
+                                default:
+                                cout<<"";
+                                }
+                      
+                      
+                      
+                        break;
+                        case 2:
+                        opcionA2();//A2
+                            cin>>eleccion;
+                            switch(eleccion){
+                                case 1:
+                                opcionA21();
+                                    cin>>eleccion;
+                                        switch(eleccion){
+                                            case 1:
+                                            opcionA211();
+                                                cin>>eleccion;
+                                                switch(eleccion){
+                                                    case 7:
+                                                    perdisteAldea();
+                                                    break;
+                                                    default:
+                                                    cout<<"Escribe el numero 7"<<endl;
+                                                }
+                                            
+                                            break;
+                                            case 2:
+                                            opcionA212();
+                                                cin>>eleccion;
+                                                switch(eleccion){
+                                                    case 7:
+                                                    perdisteAldea();
+                                                    break;
+                                                    default:
+                                                    cout<<"Escribe el numero 7";
+                                                }
+                                            
+                                            break;
+                                            case 3:
+                                            opcionA213();
+                                                cin>>eleccion;
+                                                switch(eleccion){
+                                                    case 7:
+                                                    ganasteALDEA();
+                                                    break;
+                                                    default:
+                                                    cout<<"Escribe el numero 7";
+                                                }
+                                            
+                                            break;
+                                            default:
+                                            cout<<"";
+                                            
+                                            
+                                        }
+                            
+                            
+                                break;
+                                case 2:
+                                opcionA22();
+                                    cin>>eleccion;
+                                     switch(eleccion){
+                                            case 1:
+                                            opcionA221();
+                                                cin>>eleccion;
+                                                switch(eleccion){
+                                                    case 7:
+                                                    perdisteAldea();
+                                                    break;
+                                                    default:
+                                                    cout<<"Escribe el numero 7";
+                                                }
+                                            
+                                            break;
+                                            case 2:
+                                            opcionA222();
+                                                cin>>eleccion;
+                                                switch(eleccion){
+                                                    case 7:
+                                                    ganasteALDEA();
+                                                    break;
+                                                    default:
+                                                    cout<<"Escribe el numero 7";
+                                                }
+                                            break;
+                                            case 3:
+                                            opcionA223();
+                                                cin>>eleccion;
+                                                switch(eleccion){
+                                                    case 7:
+                                                    perdisteAldea();
+                                                    break;
+                                                    default:
+                                                    cout<<"Escribe el numero 7";
+                                                }
+                                            break;
+                                            default:
+                                            cout<<"";
+                                            
+                                            
+                                        }
+                            
+                            
+                            
+                                break;
+                                 case 3:
+                                opcionA23();
+                                    cin>>eleccion;
+                                    switch(eleccion){
+                                            case 1:
+                                            opcionA231();
+                                                cin>>eleccion;
+                                                switch(eleccion){
+                                                    case 7:
+                                                    perdisteAldea();
+                                                    break;
+                                                    default:
+                                                    cout<<"Escribe el numero 7";
+                                                }
+                                            
+                                            break;
+                                            case 2:
+                                            opcionA232();
+                                                cin>>eleccion;
+                                                switch(eleccion){
+                                                    case 7:
+                                                    perdisteAldea();
+                                                    break;
+                                                    default:
+                                                    cout<<"Escribe el numero 7";
+                                                }
+                                            break;
+                                            case 3:
+                                            opcionA233();
+                                                cin>>eleccion;
+                                                switch(eleccion){
+                                                    case 7:
+                                                    ganasteALDEA();
+                                                    break;
+                                                    default:
+                                                    cout<<"Escribe el numero 7";
+                                                }
+                                            
+                                            break;
+                                            default:
+                                            cout<<"";
+                                            
+                                            
+                                        }
+                            
+                            
+                            
+                                break;
+                                default:
+                                cout<<"";
+                                }
+                      
+                      
+                      
+                        break;
+                        case 3:
+                        opcionA3();//A3
+                        cin>>eleccion;
+                            switch(eleccion){
+                                case 1:
+                                opcionA31();
+                                    cin>>eleccion;
+                                    switch(eleccion){
+                                            case 1:
+                                            opcionA311();
+                                                cin>>eleccion;
+                                                switch(eleccion){
+                                                    case 7:
+                                                    ganasteALDEA();
+                                                    break;
+                                                    default:
+                                                    cout<<"Escribe el numero 7";
+                                                }
+                                            
+                                            break;
+                                            case 2:
+                                            opcionA312();
+                                                cin>>eleccion;
+                                                switch(eleccion){
+                                                    case 7:
+                                                    ganasteALDEA();
+                                                    break;
+                                                    default:
+                                                    cout<<"Escribe el numero 7";
+                                                }
+                                            break;
+                                            case 3:
+                                            opcionA313();
+                                                cin>>eleccion;
+                                                switch(eleccion){
+                                                    case 7:
+                                                    perdisteAldea();
+                                                    break;
+                                                    default:
+                                                    cout<<"Escribe el numero 7";
+                                                }
+                                            
+                                            break;
+                                            default:
+                                            cout<<"";
+                                            
+                                            
+                                        }
+                            
+                                break;
+                                case 2:
+                                opcionA32();
+                                    cin>>eleccion;
+                                    switch(eleccion){
+                                            case 1:
+                                            opcionA321();
+                                                cin>>eleccion;
+                                                switch(eleccion){
+                                                    case 7:
+                                                    perdisteAldea();
+                                                    break;
+                                                    default:
+                                                    cout<<"Escribe el numero 7";
+                                                }
+                                            
+                                            break;
+                                            case 2:
+                                            opcionA322();
+                                                cin>>eleccion;
+                                                switch(eleccion){
+                                                    case 7:
+                                                    ganasteALDEA();
+                                                    break;
+                                                    default:
+                                                    cout<<"Escribe el numero 7";
+                                                }
+                                            break;
+                                            case 3:
+                                            opcionA323();
+                                                cin>>eleccion;
+                                                switch(eleccion){
+                                                    case 7:
+                                                    perdisteAldea();
+                                                    break;
+                                                    default:
+                                                    cout<<"Escribe el numero 7";
+                                                }
+                                            
+                                            break;
+                                            default:
+                                            cout<<"";
+                                            
+                                            
+                                        }
+                            
+                            
+                                break;
+                                 case 3:
+                                opcionA33();
+                                    cin>>eleccion;
+                                    switch(eleccion){
+                                            case 1:
+                                            opcionA331();
+                                                cin>>eleccion;
+                                                switch(eleccion){
+                                                    case 7:
+                                                    ganasteALDEA();
+                                                    break;
+                                                    default:
+                                                    cout<<"Escribe el numero 7";
+                                                }
+                                            
+                                            break;
+                                            case 2:
+                                            opcionA332();
+                                                cin>>eleccion;
+                                                switch(eleccion){
+                                                    case 7:
+                                                    perdisteAldea();
+                                                    break;
+                                                    default:
+                                                    cout<<"Escribe el numero 7";
+                                                }
+                                            break;
+                                            case 3:
+                                            opcionA333();
+                                                cin>>eleccion;
+                                                switch(eleccion){
+                                                    case 7:
+                                                    perdisteAldea();
+                                                    break;
+                                                    default:
+                                                    cout<<"Escribe el numero 7";
+                                                }
+                                            
+                                            break;
+                                            default:
+                                            cout<<"";
+                                            
+                                            
+                                        }
+                            
+                            
+                                break;
+                                default:
+                                cout<<"";
+                                }
+                         break;
+                        default:
+                        cout<<"";
+                  } 
+                    
+                break;
+/*Op Cueva*/    case 2: 
+                opcionB();
+                
+                
+                
+                break;   
+/*Op Montaña*/  case 3: 
+                opcionC();
+                break;
+            default:
+            cout<<"";
+    
+            
+        }//switch Aldea Montaña y Cueva
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    }//if
+    //000000000000000000000
+        
+    switch(menu){
+        
+    case 2:
+        cout << "-----------------------------------------------------------------------------------------" << endl;
+        cout << "INSTRUCCIONES:" << endl;
+        cout << "Esta es una historia, en la que tienes la posibilidad de construir tu propio camino," << endl;
+        cout << "pero ten cuidado, pocos son los caminos que te llevan a un final bueno, pues esta " << endl;
+        cout << "historia esta lleno de retos, desafios y desiciones en las que no hay vuelta atras." << endl;
+        cout <<endl;
+        cout << "Algo importante a destacar es que tienes un porcentaje de vida, esta va de 0 a 10 puntos" << endl;
+        cout << "maximos de vida, las acciones que elijas pueden o no quitarte vida, esto depende de que hiciste. " << endl;
+    break;
+    
+    case 3:
+        cout << "-----------------------------------------------------------------------------------------" << endl;
+        cout << "CONTEXTO:" << endl;
+        cout << "Eres una reportera que trabaja de manera independiente llamada Verónica que decidió " << endl;
+        cout << "navegar a través de una lancha hasta llegar a una isla de nombre Upsilon, pues habías " << endl;
+        cout << "escuchado que en esta  isla pasaban cosas extrañas, pues se cuenta que había tribus que  " << endl;
+        cout << "nunca habían tenido contacto con más seres humanos. " << endl;
+        cout << "Debido a que es tu primera vez haciendo esto te pierdes fácilmente, estas muy alejada de " << endl;
+        cout << "tu barco, sabes donde esta, pero para llegar a él tendras que pasar obstáculos de la " << endl;
+        cout << "manera más eficiente posible, tendrás tomar decisiones para que salgas con vida de aquí."<<endl;
+    break;
+    
+    case 4:
+        cout<<"Emiliano Isacar Olmedo Samano Grupo:1158 ICO UNAM"<<endl;
+    break;
+    case 5:
+        exit;
+    break;
+    default:
+        cout<<"Favor de Ejecutar El Codigo de Nuevo";
+        
+    }
+ 
+    return 0;
+}
