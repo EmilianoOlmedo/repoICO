@@ -1,0 +1,136 @@
+#include <iostream>
+using namespace std;
+/*VERSION 0.2.0 
+Programa Epsilon*/
+void menuPrincipal() {
+    cout <<"----------------Bienvendio al Juego Interactivo----------------"<<endl;
+    cout <<"Por favor, selecciona una opcion, para esto se debe "<<endl;
+    cout <<"de teclear el numero del inciso, acto seguido pulsar ENTER."  <<endl;
+    cout<< "---------------------------------------------------------------"<<endl;
+    cout<< "1) ° PLAY °"<<endl;
+    cout<< "2) Instrucciones para jugar."<<endl;
+    cout<< "3) Contexto para entener la historia."<<endl;
+    cout<< "4) Información del creador del código."<<endl;
+    cout <<"5) Ya no quiero jugar y quiero cerrar el juego porque esta mal programado."<<endl;
+}
+
+
+void historia_punto_1() {
+    cout << "Punto 1: Te encuentras en un bosque oscuro." << endl;
+    cout << "¿Qué decides hacer?" << endl;
+    cout << "1. Seguir el camino iluminado." << endl;
+    cout << "2. Explorar el bosque en la oscuridad." << endl;
+    cout << "3. Acampar y descansar." << endl;
+}
+
+void historia_punto_2a() {
+    cout << "Punto 2: Sigues el camino iluminado y encuentras una ciudad." << endl;
+    cout << "¿Cómo decides entrar?" << endl;
+    cout << "1. De manera furtiva, evitando ser visto." << endl;
+    cout << "2. Caminando con confianza hacia la entrada principal." << endl;
+    cout << "3. Buscar otra entrada menos vigilada." << endl;
+}
+
+void historia_punto_2b() {
+    cout << "Punto 2: Te aventuras en la oscuridad y descubres una cueva misteriosa." << endl;
+    cout << "¿Entrar en la cueva o seguir explorando el bosque?" << endl;
+    cout << "1. Entrar en la cueva." << endl;
+    cout << "2. Continuar explorando el bosque." << endl;
+    cout << "3. Encender una antorcha antes de continuar." << endl;
+}
+
+void historia_punto_2c() {
+    cout << "Punto 2: Decides acampar y descansar bajo las estrellas." << endl;
+    cout << "¿Cómo prefieres pasar la noche?" << endl;
+    cout << "1. Encender una fogata y cocinar algo ligero." << endl;
+    cout << "2. Descansar directamente sin hacer ruido." << endl;
+    cout << "3. Montar una tienda de campaña para mayor seguridad." << endl;
+}
+
+void historia_punto_3a() {
+    cout << "Punto 3: Logras infiltrarte en la ciudad sin ser visto." << endl;
+    cout << "¿Qué haces a continuación?" << endl;
+    cout << "1. Buscar información en la taberna del lugar." << endl;
+    cout << "2. Dirigirte al mercado para comprar suministros." << endl;
+    cout << "3. Buscar un lugar para descansar sin levantar sospechas." << endl;
+}
+
+void historia_punto_3b() {
+    cout << "Punto 3: Descubres que la cueva es el hogar de una criatura misteriosa." << endl;
+    cout << "¿Cómo decides proceder?" << endl;
+    cout << "1. Intentar comunicarte con la criatura." << endl;
+    cout << "2. Salir rápidamente de la cueva." << endl;
+    cout << "3. Investigar más a fondo la cueva antes de decidir." << endl;
+}
+
+void historia_punto_3c() {
+    cout << "Punto 3: Pasas la noche sin incidentes en tu campamento." << endl;
+    cout << "¿Qué haces al amanecer?" << endl;
+    cout << "1. Desmontar el campamento y continuar explorando." << endl;
+    cout << "2. Buscar rastros de otras personas en el bosque." << endl;
+    cout << "3. Regresar al camino iluminado y seguir hacia la ciudad." << endl;
+}
+
+int main()
+{    
+    menuPrincipal();
+    int eleccion;
+    cin >> eleccion;
+    
+   // historia_punto_1();
+
+    if (eleccion == 1) {
+        historia_punto_1();
+        cin >> eleccion;
+    } 
+    switch(eleccion){
+        
+    case 2:
+    cout<<"INSTRUCCIONES DEL JUEGO"<<endl;
+    break;
+    
+    case 3:
+    cout<<"Contexto de la historia"<<endl;
+    break;
+    
+    case 4:
+    cout<<"Info del creador"<<endl;
+    break;
+    case 5:
+    exit;
+    break;
+    default:
+    cout<<"Elije un numero del 1 al 5";
+        
+    }
+    
+    
+    
+    
+    
+    /*else if (eleccion == 2) {
+        historia_punto_2b();
+        cin >> eleccion;
+
+        if (eleccion == 1) {
+            historia_punto_3a();
+        } else if (eleccion == 2) {
+            historia_punto_3b();
+        } else if (eleccion == 3) {
+            historia_punto_3c();
+        }
+    } else if (eleccion == 3) {
+        historia_punto_2c();
+        cin >> eleccion;
+
+        if (eleccion == 1) {
+            historia_punto_3a();
+        } else if (eleccion == 2) {
+            historia_punto_3b();
+        } else if (eleccion == 3) {
+            historia_punto_3c();
+        }
+    }
+*/
+    return 0;
+}
