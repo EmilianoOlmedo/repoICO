@@ -1,0 +1,45 @@
+#include <iostream>
+
+using namespace std;
+// Versión Del Cédigo V.0.1//
+int main()
+{
+    int MenuValor= 0;
+    int camino2= 0;
+    int camino3= 0;
+    
+    cout <<"----------------Bienvendio al Juego Interactivo----------------"<<endl;
+    cout <<"Por favor, selecciona una opcion, para esto se debe "<<endl;
+    cout <<"de teclear el numero del inciso, acto seguido pulsar ENTER."  <<endl;
+    cout<< "---------------------------------------------------------------"<<endl;
+    cout<< "1) ° PLAY °"<<endl;
+    cout<< "2) Instrucciones para jugar."<<endl;
+    cout<< "3) Contexto para entener la historia."<<endl;
+    cout<< "4) Información del creador del código."<<endl;
+    cout <<"5) Ya no quiero jugar y quiero cerrar el juego porque esta mal programado."<<endl;
+    cin>> MenuValor;
+        switch(MenuValor){
+            case 1: 
+                cout<<"Aqui se coloca el juego xd"<<endl;
+                cin>>camino2;
+            break;
+            case 2: 
+                cout<<"El juego es una historia interactiva donde el jugador"<<endl;;
+                cout <<"toma desiciones, cada una de estas afecta la historia y"<<endl;
+                cout<< "afecta el camino que elijas, se cuidadoso y diviertete"<<endl;
+                exit;
+            break;
+            case 3: 
+                cout<<"AQUI SE PONE EL CONTEXTO";
+            break;
+            case 4: 
+                cout<<"Emiliano Isacar Olmedo Sámano Grupo 1158 ICO";
+            break;
+            case 5: 
+                exit;
+                break;
+            
+        
+}
+    return 0;
+}
