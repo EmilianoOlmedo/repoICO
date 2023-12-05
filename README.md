@@ -1,3 +1,3 @@
 # repoICO
-# Nombre: Emiliano Olemdo
+# Nombre: Emiliano Olmedo
 # Grupo 1158
